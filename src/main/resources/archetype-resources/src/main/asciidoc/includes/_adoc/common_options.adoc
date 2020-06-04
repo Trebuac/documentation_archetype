@@ -16,7 +16,7 @@
 
 // Style and customisation
 :stylesdir: css/
-:stylesheet: spring.css
+:stylesheet: style.css
 :linkcss:
 :icons: font
 :source-language: asciidoc

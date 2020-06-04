@@ -12,18 +12,6 @@
         <include>**/*.adoc</include>
       </includes>
     </fileSet>
-    <!-- Copy without filtering -->
-    <fileSet encoding="UTF-8">
-      <directory>src/main/asciidoc</directory>
-      <includes>
-        <include>**/*.xml</include>
-        <include>**/*.html</include>
-        <include>**/*.jpg</include>
-        <include>**/*.css</include>
-        <include>**/*.ico</include>
-        <include>**/*.js</include>
-      </includes>
-    </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
       <directory>src/assembly</directory>
       <includes>
@@ -36,5 +24,34 @@
         <include>readme.adoc</include>
       </includes>
     </fileSet>
+    <!-- Copy without filtering -->
+    <fileSet encoding="UTF-8">
+      <directory>src/main/asciidoc</directory>
+      <includes>
+        <include>**/*.xml</include>
+        <include>**/*.html</include>
+        <include>**/*.jpg</include>
+        <include>**/*.png</include>
+        <include>**/*.css</include>
+        <include>**/*.ico</include>
+        <include>**/*.js</include>
+      </includes>
+    </fileSet>
+    <!-- Copy without filtering -->
+    <fileSet encoding="UTF-8">
+      <directory>src/main/sass</directory>
+      <includes>
+        <include>**/*.scss</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>package.json</include>
+        <include>gulpfile.js</include>
+         <include>.gitignore</include>
+      </includes>
+    </fileSet>
+
   </fileSets>
 </archetype-descriptor>

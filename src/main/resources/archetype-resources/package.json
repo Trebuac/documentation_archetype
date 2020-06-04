@@ -1,0 +1,19 @@
+{
+  "name": "asciidoctor-maven-example",
+  "version": "1.0.0",
+  "description": "= Asciidoctor Maven Plugin: AsciiDoc to HTML Example",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp dev"
+  },
+  "author": "",
+  "license": "Apache-2.0"
+}
