@@ -31,6 +31,8 @@ endif::[]
 // Specific to PDF backend
 ifdef::backend-pdf[]
 :source-highlighter: coderay
+:pdf-stylesdir: ../pdf-theme
+:pdf-style: custom
 endif::[]
 
 

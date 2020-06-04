@@ -1,0 +1,13 @@
+extends: default
+
+header:
+  font_color: 999999
+  height: 0.5in
+footer:
+  height: 0.45in
+  recto:
+    right:
+      content: '{section-or-chapter-title} | {page-number}'
+  verso:
+    left:
+      content: '{page-number} | {chapter-title}'
