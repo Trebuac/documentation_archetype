@@ -9,21 +9,21 @@ If your are new here, the best way to start coding is reading the _Build Instruc
 ****
 
 .Project presentations
-
+[horizontal]
 xref:functional_introduction.adoc[Functional introduction] :: Functional presentation of the project, its purpose, the main processes and the glossary
 xref:architecture.adoc[Architecture] :: Extract of the software architecture document for the developpers (main technical diagrams, interfaces, database and cross-cuttings concepts)
 xref:infrastructure.adoc[Infrastructure] :: Platforms and project infrastructure (CI/CD, environments from dev to production)
 xref:organisation.adoc[Workflows and organisation] :: Project and development workflows 
 
 .Development documentations
-
+[horizontal]
 xref:build_instructions.adoc[Build instructions] :: Installation and use of a development environment 
 xref:coding_rules.adoc[Coding rules] :: Convention and coding rules to follow
 xref:detailed_designs.adoc[Detailed designs] :: Detailed designs of key functions
 xref:release_process.adoc[Release process] :: Versionning rules and snapshot/release process
 
 .Production
-
+[horizontal]
 xref:installation_guide.adoc[Installation guide] :: Installation guidelines (from scratch or update)
 xref:troubleshooting.adoc[Troubleshooting] :: Troubleshotting of the different environments (MCO tips and tricks, usefull scripts and explanation) 
 
