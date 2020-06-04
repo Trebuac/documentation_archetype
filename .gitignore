@@ -1,0 +1,10 @@
+# IDEs and editors
+.vscode/**
+*.project
+.settings/
+*.editorconfig
+*.classpath
+
+### Maven ###
+target/
+

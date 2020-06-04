@@ -1,0 +1,102 @@
+= ${project} documentation
+
+> This project is the development documentation of ${project} written in asciidoc and plantUML.
+
+== About This Project
+
+This documentation is made by developers and for developers to present the whole project from the main functional processes to a production troubleshooting. It doesn't replace the regulatory documentation (Project management plan, Software architecture documentation, master content,... ) but consolidates as close as possible to the developments all the necessary information.
+
+This documentation is *maintained by the whole team*.
+
+Written in asciidoc, it is organized with a main page `index.adoc` which references the following structure :
+
+```
+index
++- Project presentations
+|  +- functional_introduction
+|  +- architecture
+|  +- infrastructure
+|  +- organisation
++- Development documentations
+|  +- build_instructions
+|  +- coding_rules
+|  +- detailed_designs
+|  +- release_process
++- Production
+|  +- installation_guide
+|  +- troubleshooting
+
++- Includes
+|  +- _adoc <1>
+|  +- diagrams <2>
+|  +- images <3>
+
++- css <4>
++- js <4>
+
+```
+<1> contains adoc files included in the main adoc files. This folder starting with _ is considered internal and is not rendered by asciidoc processor during the build.
+<2> contains plantuml files. Diagrams are generated during the build phase.
+<3> contains images files (jpg/png) included in adoc.
+<4> contains css and javascript files used to render html.
+
+Please refer to the *Document Objective* chapter file to get the purpose of each file.
+
+== Getting Started
+
+== Graphviz configuration
+Asciidoctor Diagram bundles both the ditaa and PlantUML libraries and will use them to generate diagrams.
+In order to generate diagrams using Graphviz, you must install it separately.
+There are two options to reference the installed Graphviz's _dot_ tool in order to generate diagrams: system's PATH or plug-in attributes configuration.
+
+=== Configuration via system's PATH
+Visit link:http://www.graphviz.org/[Graphviz' site] for details on how to install the _dot_ command tool, and to make the _dot_ command available on your system's PATH.
+
+=== Configuration via plug-in attributes
+Once Graphviz binaries from the link:http://www.graphviz.org/[Graphviz' site] are available on the system, the plug-in attributes in the pom.xml can be used to reference to the _dot_ tool directly.
+This type of configuration may be especially useful when working in a CI environment.
+Example:
+
+[source,xml]
+----
+<plugin>
+    <groupId>org.asciidoctor</groupId>
+    <artifactId>asciidoctor-maven-plugin</artifactId>
+    ...
+    <configuration>
+        <attributes>
+            <graphvizdot>/PATH/TO/Graphviz/bin/dot</graphvizdot>
+        </attributes>
+        ...
+----
+
+== Usage
+
+The build is managed using `maven`. 
+
+The `generate-resources` phase builds :
+
+- a HTML website (with css/js)
+- a list of PDF files
+
+The `package` phase creates a zip containing the two kind of documentation with the *maven-assembly-plugin*.
+
+The default goal defined in the pom.xml is `clean package`.
+
+Commands :
+
+- `mvn` builds and package the documentation
+- `mvn clean install` clears the target directory, build all the documentation before installing it to your local maven repository 
+
+== Asciidoc
+
+All files include a `common_options.adoc` files which contains asciidoc options shared by all documents.
+
+For syntax definition, see 
+
+- https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[Quick Reference] 
+- https://asciidoctor.org/docs/user-manual/[User manual]
+
+== PlantUML diagrams
+
+See the https://plantuml.com/[PlanUml official website] for syntax definition and use an https://www.planttext.com/[Online generator] to quickly create diagrams.

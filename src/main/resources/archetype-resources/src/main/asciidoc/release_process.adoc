@@ -1,0 +1,23 @@
+include::includes/_adoc/common_options.adoc[]
+
+= Release Process
+
+== Document Objective
+-> Release procedure, revue de livraison
+
+
+
+== Release
+
+The release process is done via Jenkins Job: http://frrd043334:8080/view/Continuous%20Integration%20/job/Shiva-Deploy/build?delay=0sec
+
+The release process will release *_all_* Shiva modules. (i.e Shiva, Shiva Result Repo, Shiva Variant, etc)
+
+The job takes following parameters
+
+.Release parameters
+SOURCE_BRANCH :: Branch to release
+REQUESTED_ACTION :: A dropdown to choose either a deploy (for a SNAPSHOT) or release (for a release version)
+RELEASE_VERSION:: the actual version to deploy
+
+NOTE: The release process handle deploying artifact to Artifactory, tagging the version, generating a site, sign binaries and publishing dependecies to Dependency-Track instance

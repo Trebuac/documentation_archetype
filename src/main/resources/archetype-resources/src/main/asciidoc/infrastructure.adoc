@@ -1,0 +1,65 @@
+include::includes/_adoc/common_options.adoc[]
+
+= Infrastructure
+
+== Document Objective
+
+-> Infrastructure (plateforms, integration continue mise en place et jobs, integration, production)
+Platforms and project infrastructure (CI/CD, environments from dev to production)
+
+== Security and Access
+
+=== Continous Integration
+
+==== Jenkins
+
+The CI Server is XXXX deployed on the XXX
+
+Jenkins Jobs can be accessed at XXXXX
+
+
+Access to the machine
+How jobs are configured
+
+
+==== SONAR
+
+The Sonar Server is located at http://frrd043334:9000/projects
+
+Comptes, accès
+
+
+== Run platforms
+
+Deployment View
+
+<This section describes the physical deployment (in production and test environment) of the software system and the hardware infrastructure, including:
+·	estimation of hard disk volume requirements,
+·	estimation of RAM size requirements,
+·	estimation of CPU requirements,
+·	estimation of the OS requirements,
+·	... (this list may be enriched as necessary).
+For each of the above items, a rationale of the estimations must be given.
+
+The rationale must include as inputs, the following typical hardware/performance requirements (if any), and explicitly refer to them:
+·	response times
+·	data volumes
+·	real time constraints 
+·	hardware constraints
+>
+9.1.	 Deployment in production environment
+
+
+<As well as the description of the deployment in production (e.g. with UML deployment diagrams), this section will explain how the compatibility between the different pieces of software is ensured.
+A typical explanation may be (to be adapted): >
+
+At the software development level, the compatibility is ensured by different means:
+·	reading and analysis of the documentation (eg release notes) of the software components
+·	support of the development tools such as maven, integrating dependency information of the components
+9.2.	 Deployment in test environment
+
+
+ 
+9.3.	 Hardware configurations and requirements
+
+

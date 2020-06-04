@@ -1,0 +1,65 @@
+= Project documentation archetype
+
+> Create a complete documentation plan for your development projects.
+
+== About This Project
+
+This project is a _maven archetype_ to easily create a asciidoc template for development projects.
+
+== Getting Started
+
+To use this archetype on your project (if the archetype is in your repo) :
+
+[source,cmd]
+```
+mvn archetype:generate  -DarchetypeGroupId="com.trebuac" ^
+                        -DarchetypeArtifactId="documentation-archetype" ^
+                        -DarchetypeVersion="0.0.0.0-SNAPSHOT" ^<1>
+                        -Dproject="DummyProject" ^<2>
+                        -DgroupId="com.trebuac" ^<2>
+                        -DartifactId="documentation" ^<2>
+                        -Dversion="0.0.0.0-SNAPSHOT"<2>
+```
+<1> Change the archetype version with the one installed in your repo
+<2> Define the different properties of your project
+
+_Note_: The `^` is used to copy/paste the multiline cmd into a windows terminal. Use ``` for powershell terminal.
+
+[TIP]
+If the archetype is not installed in your local or distant maven repository, clone this repo and `mvn clean install`.
+
+== Usage
+
+```
+archetype-root/
+├── pom.xml
+└── src
+    ├── main
+    │   └── resources <1>
+    │       ├── archetype-resources
+    │       │   ├── pom.xml
+    │       │   ├── readme.adoc
+    │       │   └── src 
+    │       └── META-INF 
+    │           └── maven
+    │              └── archetype-metadata.xml <2>
+    └── test
+```
+<1> Location of all sources (pom.xml, adoc files,... )
+<2> Definition of the archetype (files to copy and to *filter*)
+
+=== Update the template
+
+Update template files (adoc, pom.xml) contained in src/main/resources
+
+Launch `mvn archetype:integration-test` on the archetype base directory and visualize the result in your target file
+`.\target\test-classes\projects\nominalTestCase\project\myProjectArtifactId`
+
+[NOTE]
+The sub project is generated thanks to archetype integration tests and the *goal.txt* file in `src/test/resources` defining the maven goals to launch after the build. See http://maven.apache.org/archetype/maven-archetype-plugin/integration-test-mojo.html[maven documentation].
+
+=== Create a new version
+
+Simple as a :
+
+- `mvn clean install`

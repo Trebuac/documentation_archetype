@@ -1,0 +1,28 @@
+// Common configuration for all adoc files of the project
+// See detailled documentation https://asciidoctor.org/docs/user-manual/#builtin-attributes
+
+// Document configuration
+:doctype: book
+:docinfo: shared 
+
+// Table of contents - mainly handled by custom js scripts
+:toc: left
+:sectanchors:
+:sectlinks:
+:sectnums!:
+
+// Shared image folder 
+:imagesdir: ./
+
+// Style and customisation
+:stylesdir: css/
+:stylesheet: spring.css
+:linkcss:
+:icons: font
+:source-language: asciidoc
+:source-highlighter: highlightjs
+:highlightjsdir: js/highlight
+:highlightjs-theme: github
+
+
+

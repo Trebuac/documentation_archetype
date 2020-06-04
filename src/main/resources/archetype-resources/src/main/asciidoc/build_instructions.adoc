@@ -1,0 +1,79 @@
+include::includes/_adoc/common_options.adoc[]
+
+= Build instructions
+
+== Document Objective
+
+This document describes the steps needed to build the ${project} application on a development environment. It also presents the different commands and scripts to use. 
+
+== Development Setup
+
+=== Software Requirements
+
+[options="header"]
+
+All these tools must be installed and configured to build sources and run terraform scripts.
+
+|===
+|Tool 				| Goal 					    | Version 			| Binraies
+|Git 				| Manage source	 	        | 2.+				| https://git-scm.com/downloads[Download git]
+|Java 				| Java compiler		 	    | 11				| https://adoptopenjdk.net/[Download JDK 11]
+|Maven 				| Build the project 	    | 3.6.+				| https://maven.apache.org/download.cgi[Download Maven]
+|NodeJS and Npm		| Javascript runtime 	    | 12.14.+			| https://nodejs.org/en/[Download NodeJS]
+|===
+
+=== Install Git
+
+=== Install Maven
+
+=== Install Java
+
+
+== Development Configuration
+
+=== Source code
+
+Source code is available in XXX : 
+
+Get the source code by cloning the XXX project or configuring a P4 workspace.
+
+=== Maven
+
+Maven configuration is specified below. It should be added to your configuration `${user.home}/.m2/settings.xml`
+
+[source,xml]
+----
+include::includes/maven/settings.xml[]
+----
+<1> Replace this with your .m2 folder if needed.
+
+=== IDE
+
+== Development Environment
+
+=== Build and package 
+
+Maven commands can be launched on the root project or in modules directory.
+
+- `mvn`: Trigger the default goal if specified in the pom.xml.
+- `mvn clean`: clean build directories. 
+- `mvn package`: Compile and package the project
+- `mvn install`: Install binaries/packages in your local repository
+
+_Note_ : Most of pom.xml include a default goal.
+
+.Maven options and profiles
+skipTests :: _-DskipTests_ Skips all tests
+noGui :: _-DnoGui_ Skips the angular GUI build
+
+=== Running tests
+
+Description of the different tests (unit, integration) and how to launch it.
+
+=== Debugging the application
+
+How to debug the different part of the application (launch the applicaiton in debug mode, debug the gui, activate logs,...)
+
+=== Running the application
+
+How to run the application on the development environment 

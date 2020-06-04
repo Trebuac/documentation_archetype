@@ -1,0 +1,45 @@
+include::includes/_adoc/common_options.adoc[]
+
+= Installation procedure
+
+== Document Objective
+
+This document describes the installation and configuration procedure for the ${project} Application.
+
+=== Presentation
+
+The ${project} Application is installed through a standard InnoSetup installer. 
+
+=== Prerequisites
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
+
+IMPORTANT: At vero eos et accusamus et iusto odio dignissimos.
+
+== Required Components
+
+For the application to work, several component must be installed prior to the ${project} Installation.
+
+=== Component 1
+
+=== Component 2
+
+== Installation   
+
+=== Installation Steps  
+
+=== Database Installation Steps
+
+== Post-installation steps
+
+=== Configuration
+
+=== Verification
+
+To confirm that the application and its pre-requisites are installed. Please check :
+
+. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+. Nemo enim ipsam voluptatem 
+
+== Uninstall application
+

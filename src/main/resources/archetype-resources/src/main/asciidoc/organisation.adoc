@@ -1,0 +1,44 @@
+include::includes/_adoc/common_options.adoc[]
+
+= Organisation
+
+== Document Objective
+
+This document presents the different
+-> Team organisation (workflow projet JIRA, workflow technique git, definition of done, tickets, revue de code, seuils d'exigence qualité, )
+
+== Access
+
+
+== Project workflow
+
+How the job is defined ? and done from the definition of the workpackage to the delivery.
+
+=== Tools
+
+Which tool and workflow is used (JIRA).
+
+=== Spec/dev/test
+
+Requirements location
+Test case location
+
+== Development workflow
+
+=== Tools
+
+Git 
+Code review
+Sonar
+
+=== Definition of done
+
+- Merge request
+- TU ok
+- revue de code ok
+- doc ok
+
+== MCO workflow
+
+Ticketing
+Access

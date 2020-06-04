@@ -1,0 +1,15 @@
+include::includes/_adoc/common_options.adoc[]
+
+= Coding rules
+
+== Document Objective
+
+-> Coding rules, conventions
+
+
+High level layers
+
+
+<Insert diagram(s) representing the high-level layers, and their textual description.>
+7.1.2.	 Application layers
+<Insert diagram(s) representing the application layers, and their textual description.>

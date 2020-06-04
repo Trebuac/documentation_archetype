@@ -1,0 +1,64 @@
+include::includes/_adoc/common_options.adoc[]
+
+= Architecture
+
+== Document Objective
+
+This document explains the main architectural principles that will guide the implementation of the ${project} software.
+It's an extraction of the _Software Architecture and Design Document_ with a focus on the development choices that every developpers need to understand. 
+
+== System physical architecture overview
+
+
+The <YYY> system is basically made of:
+
+- An instrument (hardware and firmware parts).
+- A computer (PC under Windows 7) running the <XXX> software. Basically, the main role of this software is to provide a user interface for the end user, allowing the user to use the system. The instrument and the <XXX> software are connected through a TCP/IP interface.
+- Peripherals (Hand scanner for barcode inputs, printer).
+
+== Software architecture overview
+
+The <YYY> system is shared into XXX modules. 
+
+[plantuml,"includes/diagrams/components",png,align="center"]
+----
+include::includes/diagrams/components.uml[]
+----
+
+== Software interfaces
+
+This section provides the technical description or the references to the main interfaces designed and used for the system
+
+== Technical drivers
+
+The <XXX> software will be implemented with the following technologies will:
+
+-	Java and Spring technologies,
+-	Angular for Web user interfaces,
+-	JMS for asynchronous communication,
+-	REST Web services for synchronous communication,
+-	PostgreSQL database for storage.
+
+
+== Database
+
+=== Model
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+
+=== Transaction management
+
+At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+
+
+== Transversal aspects
+
+=== Internationalization
+
+=== Audit 
+
+=== Security
+
+=== Exception handling
+
+=== Logging 

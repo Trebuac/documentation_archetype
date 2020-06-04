@@ -1,0 +1,7 @@
+include::includes/_adoc/common_options.adoc[]
+
+= Detailled designs
+
+== Document Objective
+
+-> Features detailed designs 
