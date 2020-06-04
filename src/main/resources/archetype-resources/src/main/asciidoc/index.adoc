@@ -24,7 +24,7 @@ xref:release_process.adoc[Release process] :: Versionning rules and snapshot/rel
 
 .Production
 
-xref:installation_guide.adoc[installation guide] :: Installation guidelines (from scratch or update)
+xref:installation_guide.adoc[Installation guide] :: Installation guidelines (from scratch or update)
 xref:troubleshooting.adoc[Troubleshooting] :: Troubleshotting of the different environments (MCO tips and tricks, usefull scripts and explanation) 
 
 [NOTE]
