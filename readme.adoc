@@ -62,4 +62,4 @@ The sub project is generated thanks to archetype integration tests and the *goal
 
 Simple as a :
 
-- `/mvnw clean install`
+- `./mvnw clean install`
