@@ -6,6 +6,8 @@
 
 This project is a _maven archetype_ to easily create a asciidoc template for development projects.
 
+An example is available on http://trebuac.github.io/documentation_archetype/[github pages].
+
 == Getting Started
 
 To use this archetype on your project (if the archetype is in your repo) :
