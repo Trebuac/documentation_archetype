@@ -54,11 +54,21 @@
       </includes>
     </fileSet>
     <fileSet encoding="UTF-8">
+      <directory>.mvn/wrapper</directory>
+      <includes>
+        <include>maven-wrapper.jar</include>
+        <include>maven-wrapper.properties</include>
+        <include>MavenWrapperDownloader.java</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
       <directory></directory>
       <includes>
         <include>package.json</include>
         <include>gulpfile.js</include>
-         <include>.gitignore</include>
+        <include>.gitignore</include>
+        <include>mvnw</include>
+        <include>mvnw.cmd</include>
       </includes>
     </fileSet>
 
