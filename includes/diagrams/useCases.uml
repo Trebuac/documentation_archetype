@@ -1,0 +1,10 @@
+@startuml
+
+title MyTestCaseProject use cases
+
+left to right direction
+:Users: --> (Create)
+:Users: --> (Update) 
+:Users: --> (Download)
+
+@enduml

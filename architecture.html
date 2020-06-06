@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.2">
+<title>Architecture</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Architecture</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_document_objective">Document Objective</a></li>
+<li><a href="#_system_physical_architecture_overview">System physical architecture overview</a></li>
+<li><a href="#_software_architecture_overview">Software architecture overview</a></li>
+<li><a href="#_software_interfaces">Software interfaces</a></li>
+<li><a href="#_technical_drivers">Technical drivers</a></li>
+<li><a href="#_database">Database</a>
+<ul class="sectlevel2">
+<li><a href="#_model">Model</a></li>
+<li><a href="#_transaction_management">Transaction management</a></li>
+</ul>
+</li>
+<li><a href="#_transversal_aspects">Transversal aspects</a>
+<ul class="sectlevel2">
+<li><a href="#_internationalization">Internationalization</a></li>
+<li><a href="#_audit">Audit</a></li>
+<li><a href="#_security">Security</a></li>
+<li><a href="#_exception_handling">Exception handling</a></li>
+<li><a href="#_logging">Logging</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_document_objective"><a class="anchor" href="#_document_objective"></a><a class="link" href="#_document_objective">Document Objective</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This document explains the main architectural principles that will guide the implementation of the MyTestCaseProject software.
+It&#8217;s an extraction of the <em>Software Architecture and Design Document</em> with a focus on the development choices that every developpers need to understand.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_system_physical_architecture_overview"><a class="anchor" href="#_system_physical_architecture_overview"></a><a class="link" href="#_system_physical_architecture_overview">System physical architecture overview</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The &lt;YYY&gt; system is basically made of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>An instrument (hardware and firmware parts).</p>
+</li>
+<li>
+<p>A computer (PC under Windows 7) running the &lt;XXX&gt; software. Basically, the main role of this software is to provide a user interface for the end user, allowing the user to use the system. The instrument and the &lt;XXX&gt; software are connected through a TCP/IP interface.</p>
+</li>
+<li>
+<p>Peripherals (Hand scanner for barcode inputs, printer).</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_software_architecture_overview"><a class="anchor" href="#_software_architecture_overview"></a><a class="link" href="#_software_architecture_overview">Software architecture overview</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The &lt;YYY&gt; system is shared into XXX modules.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./includes/diagrams/components.png" alt="components" width="370" height="1066">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_software_interfaces"><a class="anchor" href="#_software_interfaces"></a><a class="link" href="#_software_interfaces">Software interfaces</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This section provides the technical description or the references to the main interfaces designed and used for the system</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_technical_drivers"><a class="anchor" href="#_technical_drivers"></a><a class="link" href="#_technical_drivers">Technical drivers</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The &lt;XXX&gt; software will be implemented with the following technologies will:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Java and Spring technologies,</p>
+</li>
+<li>
+<p>Angular for Web user interfaces,</p>
+</li>
+<li>
+<p>JMS for asynchronous communication,</p>
+</li>
+<li>
+<p>REST Web services for synchronous communication,</p>
+</li>
+<li>
+<p>PostgreSQL database for storage.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_database"><a class="anchor" href="#_database"></a><a class="link" href="#_database">Database</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_model"><a class="anchor" href="#_model"></a><a class="link" href="#_model">Model</a></h3>
+<div class="paragraph">
+<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transaction_management"><a class="anchor" href="#_transaction_management"></a><a class="link" href="#_transaction_management">Transaction management</a></h3>
+<div class="paragraph">
+<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_transversal_aspects"><a class="anchor" href="#_transversal_aspects"></a><a class="link" href="#_transversal_aspects">Transversal aspects</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_internationalization"><a class="anchor" href="#_internationalization"></a><a class="link" href="#_internationalization">Internationalization</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_audit"><a class="anchor" href="#_audit"></a><a class="link" href="#_audit">Audit</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_security"><a class="anchor" href="#_security"></a><a class="link" href="#_security">Security</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_exception_handling"><a class="anchor" href="#_exception_handling"></a><a class="link" href="#_exception_handling">Exception handling</a></h3>
+
+</div>
+<div class="sect2">
+<h3 id="_logging"><a class="anchor" href="#_logging"></a><a class="link" href="#_logging">Logging</a></h3>
+
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-06-06 10:56:22 UTC
+</div>
+</div>
+<link rel="stylesheet" href="js/highlight/styles/github.min.css">
+<script src="js/highlight/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+<script type="text/javascript" src="js/tocbot/tocbot.min.js"></script>
+<script type="text/javascript" src="js/toc.js"></script>
+</body>
+</html>

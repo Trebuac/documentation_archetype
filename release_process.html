@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.2">
+<title>Release Process</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="book toc2 toc-left">
+<div id="header">
+<h1>Release Process</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_document_objective">Document Objective</a></li>
+<li><a href="#_release">Release</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_document_objective"><a class="anchor" href="#_document_objective"></a><a class="link" href="#_document_objective">Document Objective</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>&#8594; Release procedure, revue de livraison</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_release"><a class="anchor" href="#_release"></a><a class="link" href="#_release">Release</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The release process is done via Jenkins Job: <a href="http://frrd043334:8080/view/Continuous%20Integration%20/job/Shiva-Deploy/build?delay=0sec" class="bare">http://frrd043334:8080/view/Continuous%20Integration%20/job/Shiva-Deploy/build?delay=0sec</a></p>
+</div>
+<div class="paragraph">
+<p>The release process will release <strong><em>all</em></strong> Shiva modules. (i.e Shiva, Shiva Result Repo, Shiva Variant, etc)</p>
+</div>
+<div class="paragraph">
+<p>The job takes following parameters</p>
+</div>
+<div class="dlist">
+<div class="title">Release parameters</div>
+<dl>
+<dt class="hdlist1">SOURCE_BRANCH </dt>
+<dd>
+<p>Branch to release</p>
+</dd>
+<dt class="hdlist1">REQUESTED_ACTION </dt>
+<dd>
+<p>A dropdown to choose either a deploy (for a SNAPSHOT) or release (for a release version)</p>
+</dd>
+<dt class="hdlist1">RELEASE_VERSION</dt>
+<dd>
+<p>the actual version to deploy</p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The release process handle deploying artifact to Artifactory, tagging the version, generating a site, sign binaries and publishing dependecies to Dependency-Track instance
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-06-06 10:56:22 UTC
+</div>
+</div>
+<link rel="stylesheet" href="js/highlight/styles/github.min.css">
+<script src="js/highlight/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+<script type="text/javascript" src="js/tocbot/tocbot.min.js"></script>
+<script type="text/javascript" src="js/toc.js"></script>
+</body>
+</html>
