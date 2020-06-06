@@ -45,7 +45,6 @@ Maven configuration is specified below. It should be added to your configuration
 ----
 include::includes/maven/settings.xml[]
 ----
-<1> Replace this with your .m2 folder if needed.
 
 === IDE
 
