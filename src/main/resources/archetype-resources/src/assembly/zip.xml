@@ -9,22 +9,22 @@
 
   <fileSets>
     <fileSet>
-      <directory>${project.build.directory}\pdf</directory>
-      <outputDirectory>\pdf\</outputDirectory>
+      <directory>${project.build.directory}/pdf</directory>
+      <outputDirectory>./pdf/</outputDirectory>
       <excludes>
-        <exclude>.asciidoctor\**</exclude>
-        <exclude>css\**</exclude>
-        <exclude>js\**</exclude>
-        <exclude>includes\**</exclude>
+        <exclude>.asciidoctor/**</exclude>
+        <exclude>css/**</exclude>
+        <exclude>js/**</exclude>
+        <exclude>includes/**</exclude>
         <exclude>favicon.ico</exclude>
       </excludes>
     </fileSet>
     <fileSet>
-      <directory>${project.build.directory}\html5</directory>
-      <outputDirectory>\html5\</outputDirectory>
+      <directory>${project.build.directory}/html5</directory>
+      <outputDirectory>./html5/</outputDirectory>
       <excludes>
-        <exclude>**\*.uml</exclude>
-        <exclude>.asciidoctor\**</exclude>
+        <exclude>**/*.uml</exclude>
+        <exclude>.asciidoctor/**</exclude>
       </excludes>
     </fileSet>
   </fileSets>

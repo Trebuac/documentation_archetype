@@ -52,7 +52,7 @@ archetype-root/
 
 Update template files (adoc, pom.xml) contained in src/main/resources
 
-Launch `mvn archetype:integration-test` on the archetype base directory and visualize the result in your target file
+Launch `mvn verify` on the archetype base directory and visualize the result in your target file
 `.\target\test-classes\projects\nominalTestCase\project\myProjectArtifactId`
 
 [NOTE]
