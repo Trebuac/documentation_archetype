@@ -16,12 +16,20 @@
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#_document_objective">Document Objective</a></li>
-<li><a href="#_security_and_access">Security and Access</a>
+<li><a href="#_continous_integration">Continous Integration</a>
 <ul class="sectlevel2">
-<li><a href="#_continous_integration">Continous Integration</a></li>
+<li><a href="#_jenkins">Jenkins</a></li>
+<li><a href="#_job_configurations">Job configurations</a></li>
+<li><a href="#_sonar">SONAR</a></li>
 </ul>
 </li>
-<li><a href="#_run_platforms">Run platforms</a></li>
+<li><a href="#_run_platforms">Run platforms</a>
+<ul class="sectlevel2">
+<li><a href="#_development_and_tests_environments">Development and tests environments</a></li>
+<li><a href="#_integration_environment">Integration environment</a></li>
+<li><a href="#_production_environment">Production environment</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -30,37 +38,75 @@
 <h2 id="_document_objective"><a class="anchor" href="#_document_objective"></a><a class="link" href="#_document_objective">Document Objective</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>&#8594; Infrastructure (plateforms, integration continue mise en place et jobs, integration, production)
-Platforms and project infrastructure (CI/CD, environments from dev to production)</p>
+<p>This document introduces the infrastructure of the project and the different platforms from dev to production.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_security_and_access"><a class="anchor" href="#_security_and_access"></a><a class="link" href="#_security_and_access">Security and Access</a></h2>
+<h2 id="_continous_integration"><a class="anchor" href="#_continous_integration"></a><a class="link" href="#_continous_integration">Continous Integration</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_continous_integration"><a class="anchor" href="#_continous_integration"></a><a class="link" href="#_continous_integration">Continous Integration</a></h3>
-<div class="sect3">
-<h4 id="_jenkins"><a class="anchor" href="#_jenkins"></a><a class="link" href="#_jenkins">Jenkins</a></h4>
+<h3 id="_jenkins"><a class="anchor" href="#_jenkins"></a><a class="link" href="#_jenkins">Jenkins</a></h3>
 <div class="paragraph">
-<p>The CI Server is XXXX deployed on the XXX</p>
+<p>Jenkins is used as for continuous integration. It&#8217;s deployed on htpp://127.0.0.1/ server.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Jenkins use an AD authentification, ask the right IAM rights to launch projects.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_job_configurations"><a class="anchor" href="#_job_configurations"></a><a class="link" href="#_job_configurations">Job configurations</a></h3>
+<div class="paragraph">
+<p>Jobs are configured using pipelines and Jenkinsfiles.</p>
 </div>
 <div class="paragraph">
-<p>Jenkins Jobs can be accessed at XXXXX</p>
+<p>The following jobs are today configured :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Merge request pipeline</strong> : compile and run tests&#8230;&#8203;.</p>
+</li>
+<li>
+<p><strong>Master CI</strong> : &#8230;&#8203;</p>
+</li>
+<li>
+<p><strong>Integration Tests</strong> : &#8230;&#8203;</p>
+</li>
+<li>
+<p><strong>Release</strong> : See release process documentation&#8230;&#8203;</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Access to the machine
-How jobs are configured</p>
+<p>To modify a job, you have to&#8230;&#8203;</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_sonar"><a class="anchor" href="#_sonar"></a><a class="link" href="#_sonar">SONAR</a></h4>
+<div class="sect2">
+<h3 id="_sonar"><a class="anchor" href="#_sonar"></a><a class="link" href="#_sonar">SONAR</a></h3>
 <div class="paragraph">
-<p>The Sonar Server is located at <a href="http://frrd043334:9000/projects" class="bare">http://frrd043334:9000/projects</a></p>
+<p>The Sonar Server is located at htpp://127.0.0.1/sonar.</p>
 </div>
-<div class="paragraph">
-<p>Comptes, accès</p>
-</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Jenkins use an AD authentification, connect with your account to see issues.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -68,46 +114,33 @@ How jobs are configured</p>
 <div class="sect1">
 <h2 id="_run_platforms"><a class="anchor" href="#_run_platforms"></a><a class="link" href="#_run_platforms">Run platforms</a></h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_development_and_tests_environments"><a class="anchor" href="#_development_and_tests_environments"></a><a class="link" href="#_development_and_tests_environments">Development and tests environments</a></h3>
 <div class="paragraph">
-<p>Deployment View</p>
+<p>X environments are dedicated to development and &#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_integration_environment"><a class="anchor" href="#_integration_environment"></a><a class="link" href="#_integration_environment">Integration environment</a></h3>
+<div class="paragraph">
+<p>All important informations to connect to the environnement, to execute or retrieve informations.</p>
 </div>
 <div class="paragraph">
-<p>&lt;This section describes the physical deployment (in production and test environment) of the software system and the hardware infrastructure, including:
-·	estimation of hard disk volume requirements,
-·	estimation of RAM size requirements,
-·	estimation of CPU requirements,
-·	estimation of the OS requirements,
-·	&#8230;&#8203; (this list may be enriched as necessary).
-For each of the above items, a rationale of the estimations must be given.</p>
+<p>Per hoc minui studium suum existimans Paulus, ut erat in conplicandis negotiis artifex dirus, unde ei Catenae inditum est cognomentum, vicarium ipsum eos quibus praeerat adhuc defensantem ad sortem periculorum communium traxit. et instabat ut eum quoque cum tribunis et aliis pluribus ad comitatum imperatoris vinctum perduceret: quo percitus ille exitio urgente abrupto ferro eundem adoritur Paulum. et quia languente dextera, letaliter ferire non potuit, iam districtum mucronem in proprium latus inpegit. hocque deformi genere mortis excessit e vita iustissimus rector ausus miserabiles casus levare multorum.</p>
 </div>
-<div class="paragraph">
-<p>The rationale must include as inputs, the following typical hardware/performance requirements (if any), and explicitly refer to them:
-·	response times
-·	data volumes
-·	real time constraints
-·	hardware constraints
-&gt;
-9.1.	 Deployment in production environment</p>
 </div>
+<div class="sect2">
+<h3 id="_production_environment"><a class="anchor" href="#_production_environment"></a><a class="link" href="#_production_environment">Production environment</a></h3>
 <div class="paragraph">
-<p>&lt;As well as the description of the deployment in production (e.g. with UML deployment diagrams), this section will explain how the compatibility between the different pieces of software is ensured.
-A typical explanation may be (to be adapted): &gt;</p>
+<p>Dumque ibi diu moratur commeatus opperiens, quorum translationem ex Aquitania verni imbres solito crebriores prohibebant auctique torrentes, Herculanus advenit protector domesticus, Hermogenis ex magistro equitum filius, apud Constantinopolim, ut supra rettulimus, populari quondam turbela discerpti. quo verissime referente quae Gallus egerat, damnis super praeteritis maerens et futurorum timore suspensus angorem animi quam diu potuit emendabat.</p>
 </div>
-<div class="paragraph">
-<p>At the software development level, the compatibility is ensured by different means:
-·	reading and analysis of the documentation (eg release notes) of the software components
-·	support of the development tools such as maven, integrating dependency information of the components
-9.2.	 Deployment in test environment</p>
-</div>
-<div class="paragraph">
-<p>9.3.	 Hardware configurations and requirements</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-06-06 12:08:32 UTC
+Last updated 2020-06-15 15:31:10 UTC
 </div>
 </div>
 <link rel="stylesheet" href="js/highlight/styles/github.min.css">
