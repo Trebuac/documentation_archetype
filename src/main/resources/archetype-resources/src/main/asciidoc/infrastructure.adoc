@@ -4,62 +4,47 @@ include::includes/_adoc/common_options.adoc[]
 
 == Document Objective
 
--> Infrastructure (plateforms, integration continue mise en place et jobs, integration, production)
-Platforms and project infrastructure (CI/CD, environments from dev to production)
+This document introduces the infrastructure of the project and the different platforms from dev to production.
 
-== Security and Access
+== Continous Integration
 
-=== Continous Integration
+=== Jenkins
 
-==== Jenkins
+Jenkins is used as for continuous integration. It's deployed on htpp://127.0.0.1/ server.
 
-The CI Server is XXXX deployed on the XXX
+TIP: Jenkins use an AD authentification, ask the right IAM rights to launch projects.
 
-Jenkins Jobs can be accessed at XXXXX
+=== Job configurations
 
+Jobs are configured using pipelines and Jenkinsfiles.
 
-Access to the machine
-How jobs are configured
+The following jobs are today configured :
 
+- *Merge request pipeline* : compile and run tests....
+- *Master CI* : ...
+- *Integration Tests* : ...
+- *Release* : See release process documentation...
+ 
+To modify a job, you have to...
 
-==== SONAR
+=== SONAR
 
-The Sonar Server is located at http://frrd043334:9000/projects
+The Sonar Server is located at htpp://127.0.0.1/sonar.
 
-Comptes, accès
-
+TIP: Jenkins use an AD authentification, connect with your account to see issues.
 
 == Run platforms
 
-Deployment View
+=== Development and tests environments
 
-<This section describes the physical deployment (in production and test environment) of the software system and the hardware infrastructure, including:
-·	estimation of hard disk volume requirements,
-·	estimation of RAM size requirements,
-·	estimation of CPU requirements,
-·	estimation of the OS requirements,
-·	... (this list may be enriched as necessary).
-For each of the above items, a rationale of the estimations must be given.
+X environments are dedicated to development and ...
 
-The rationale must include as inputs, the following typical hardware/performance requirements (if any), and explicitly refer to them:
-·	response times
-·	data volumes
-·	real time constraints 
-·	hardware constraints
->
-9.1.	 Deployment in production environment
+=== Integration environment
 
+All important informations to connect to the environnement, to execute or retrieve informations.
 
-<As well as the description of the deployment in production (e.g. with UML deployment diagrams), this section will explain how the compatibility between the different pieces of software is ensured.
-A typical explanation may be (to be adapted): >
+Per hoc minui studium suum existimans Paulus, ut erat in conplicandis negotiis artifex dirus, unde ei Catenae inditum est cognomentum, vicarium ipsum eos quibus praeerat adhuc defensantem ad sortem periculorum communium traxit. et instabat ut eum quoque cum tribunis et aliis pluribus ad comitatum imperatoris vinctum perduceret: quo percitus ille exitio urgente abrupto ferro eundem adoritur Paulum. et quia languente dextera, letaliter ferire non potuit, iam districtum mucronem in proprium latus inpegit. hocque deformi genere mortis excessit e vita iustissimus rector ausus miserabiles casus levare multorum.
 
-At the software development level, the compatibility is ensured by different means:
-·	reading and analysis of the documentation (eg release notes) of the software components
-·	support of the development tools such as maven, integrating dependency information of the components
-9.2.	 Deployment in test environment
+=== Production environment
 
-
- 
-9.3.	 Hardware configurations and requirements
-
-
+Dumque ibi diu moratur commeatus opperiens, quorum translationem ex Aquitania verni imbres solito crebriores prohibebant auctique torrentes, Herculanus advenit protector domesticus, Hermogenis ex magistro equitum filius, apud Constantinopolim, ut supra rettulimus, populari quondam turbela discerpti. quo verissime referente quae Gallus egerat, damnis super praeteritis maerens et futurorum timore suspensus angorem animi quam diu potuit emendabat.
