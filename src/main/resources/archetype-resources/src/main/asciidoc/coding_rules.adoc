@@ -4,12 +4,36 @@ include::includes/_adoc/common_options.adoc[]
 
 == Document Objective
 
--> Coding rules, conventions
+This document describes the different coding rules and convention followed on the project.
+
+== Applicative layers
+
+== Namings
+
+=== Project, module and artifacts
+
+=== Package
+
+=== Classes
+
+== Folder presentation
+
+```
+project/
+├── pom.xml
+└── src
+    ├── main
+    │   └── java <1>
+    │       ├── com.myproject
+    │       │   ├── configuration
+    │       │   ├── controllers
+    │       │   └── services 
+    │       └── ... 
+    └── test
+```
+
+== Third party libraries
 
 
-High level layers
+== Unit tests
 
-
-<Insert diagram(s) representing the high-level layers, and their textual description.>
-7.1.2.	 Application layers
-<Insert diagram(s) representing the application layers, and their textual description.>

@@ -3,15 +3,12 @@ include::includes/_adoc/common_options.adoc[]
 = Release Process
 
 == Document Objective
--> Release procedure, revue de livraison
 
-
+This document describes the process to release the ${project} software.
 
 == Release
 
-The release process is done via Jenkins Job: http://frrd043334:8080/view/Continuous%20Integration%20/job/Shiva-Deploy/build?delay=0sec
-
-The release process will release *_all_* Shiva modules. (i.e Shiva, Shiva Result Repo, Shiva Variant, etc)
+The release process is done via Jenkins Job: 
 
 The job takes following parameters
 

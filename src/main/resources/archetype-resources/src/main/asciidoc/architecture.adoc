@@ -10,10 +10,10 @@ It's an extraction of the _Software Architecture and Design Document_ with a foc
 == System physical architecture overview
 
 
-The <YYY> system is basically made of:
+The ${project} system is basically made of:
 
 - An instrument (hardware and firmware parts).
-- A computer (PC under Windows 7) running the <XXX> software. Basically, the main role of this software is to provide a user interface for the end user, allowing the user to use the system. The instrument and the <XXX> software are connected through a TCP/IP interface.
+- A computer (PC under Windows 7) running the ${project} software. Basically, the main role of this software is to provide a user interface for the end user, allowing the user to use the system. The instrument and the <XXX> software are connected through a TCP/IP interface.
 - Peripherals (Hand scanner for barcode inputs, printer).
 
 == Software architecture overview
@@ -27,7 +27,7 @@ include::includes/diagrams/components.uml[]
 
 == Software interfaces
 
-This section provides the technical description or the references to the main interfaces designed and used for the system
+This section provides the technical description or the references to the main interfaces designed and used for the system.
 
 == Technical drivers
 
@@ -46,6 +46,12 @@ The <XXX> software will be implemented with the following technologies will:
 
 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
 
+
+[plantuml,"includes/diagrams/classDiagrams",png,align="center"]
+----
+include::includes/diagrams/classDiagrams.uml[]
+----
+
 === Transaction management
 
 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
@@ -55,10 +61,20 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 
 === Internationalization
 
+Quanta autem vis amicitiae sit, ex hoc intellegi maxime potest, quod ex infinita societate generis humani, quam conciliavit ipsa natura, ita contracta res est et adducta in angustum ut omnis caritas aut inter duos aut inter paucos iungeretur.
+
 === Audit 
+
+Raptim igitur properantes ut motus sui rumores celeritate nimia praevenirent, vigore corporum ac levitate confisi per flexuosas semitas ad summitates collium tardius evadebant. et cum superatis difficultatibus arduis ad supercilia venissent fluvii Melanis alti et verticosi, qui pro muro tuetur accolas circumfusus, augente nocte adulta terrorem quievere paulisper lucem opperientes. arbitrabantur enim nullo inpediente transgressi inopino adcursu adposita quaeque vastare, sed in cassum labores pertulere gravissimos.
 
 === Security
 
+Ob haec et huius modi multa, quae cernebantur in paucis, omnibus timeri sunt coepta. et ne tot malis dissimulatis paulatimque serpentibus acervi crescerent aerumnarum, nobilitatis decreto legati mittuntur: Praetextatus ex urbi praefecto et ex vicario Venustus et ex consulari Minervius oraturi, ne delictis supplicia sint grandiora, neve senator quisquam inusitato et inlicito more tormentis exponeretur.
+
 === Exception handling
 
+Denique Antiochensis ordinis vertices sub uno elogio iussit occidi ideo efferatus, quod ei celebrari vilitatem intempestivam urgenti, cum inpenderet inopia, gravius rationabili responderunt; et perissent ad unum ni comes orientis tunc Honoratus fixa constantia restitisset.
+
 === Logging 
+
+In his tractibus navigerum nusquam visitur flumen sed in locis plurimis aquae suapte natura calentes emergunt ad usus aptae multiplicium medelarum. verum has quoque regiones pari sorte Pompeius Iudaeis domitis et Hierosolymis captis in provinciae speciem delata iuris dictione formavit.

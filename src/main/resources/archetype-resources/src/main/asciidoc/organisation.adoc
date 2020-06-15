@@ -4,41 +4,37 @@ include::includes/_adoc/common_options.adoc[]
 
 == Document Objective
 
-This document presents the different
--> Team organisation (workflow projet JIRA, workflow technique git, definition of done, tickets, revue de code, seuils d'exigence qualité, )
-
-== Access
-
+This document presents the different workflows followed by the development teams.
 
 == Project workflow
 
-How the job is defined ? and done from the definition of the workpackage to the delivery.
+Definition of the job to the delivery (Agile with stories, Ticketing with Kanban,...).
+Where does the developpement team job starts ? 
 
 === Tools
 
-Which tool and workflow is used (JIRA).
+Which tool and workflow is used (JIRA for example).
 
-=== Spec/dev/test
-
-Requirements location
-Test case location
+Location of functionnal and technical requirements, tests cases, ...
 
 == Development workflow
 
+Cognitis enim pilatorum caesorumque funeribus nemo deinde ad has stationes appulit navem, sed ut Scironis praerupta letalia declinantes litoribus Cypriis contigui navigabant, quae Isauriae scopulis sunt controversa.
+
 === Tools
 
-Git 
-Code review
-Sonar
+Git, Code review, CI, quality(Sonar)
 
 === Definition of done
 
+Eminuit autem inter humilia supergressa iam impotentia fines mediocrium delictorum nefanda Clematii cuiusdam Alexandrini nobilis mors repentina; cuius socrus cum misceri sibi generum, flagrans eius amore, non impetraret, ut ferebatur, per palatii pseudothyrum introducta, oblato pretioso reginae monili id adsecuta est, ut ad Honoratum tum comitem orientis formula missa letali omnino scelere nullo contactus idem Clematius nec hiscere nec loqui permissus occideretur.
+
 - Merge request
-- TU ok
-- revue de code ok
-- doc ok
+- Unit tests
+- Code review 
+- Quality report
+- documentation
 
-== MCO workflow
+== Production and MCO workflow
 
-Ticketing
-Access
+Restabat ut Caesar post haec properaret accitus et abstergendae causa suspicionis sororem suam, eius uxorem, Constantius ad se tandem desideratam venire multis fictisque blanditiis hortabatur. quae licet ambigeret metuens saepe cruentum, spe tamen quod eum lenire poterit ut germanum profecta, cum Bithyniam introisset, in statione quae Caenos Gallicanos appellatur, absumpta est vi febrium repentina. cuius post obitum maritus contemplans cecidisse fiduciam qua se fultum existimabat, anxia cogitatione, quid moliretur haerebat.

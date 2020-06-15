@@ -4,4 +4,6 @@ include::includes/_adoc/common_options.adoc[]
 
 == Document Objective
 
--> Features detailed designs 
+This document presents the design of key features.
+
+include::includes\_adoc\detailled_designs\myFeature.adoc[]
